@@ -5,8 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Christopher Mooers | Software Engineering Portfolio</title>
+
   <style>
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
     body {
       margin: 0;
@@ -22,9 +25,18 @@
       text-align: center;
     }
 
-    h1 { margin-bottom: 8px; font-size: 2.5rem; }
-    h2 { color: #72b9ff; }
-    a { color: #83c6ff; }
+    h1 {
+      margin-bottom: 8px;
+      font-size: 2.5rem;
+    }
+
+    h2 {
+      color: #72b9ff;
+    }
+
+    a {
+      color: #83c6ff;
+    }
 
     nav {
       background: #22344f;
@@ -44,11 +56,14 @@
       padding: 30px 20px;
     }
 
-    section { margin-bottom: 45px; }
+    section {
+      margin-bottom: 45px;
+    }
 
     .projects {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      grid-template-columns:
+        repeat(auto-fit, minmax(240px, 1fr));
       gap: 20px;
     }
 
@@ -59,7 +74,9 @@
       border-radius: 10px;
     }
 
-    .card h3 { color: #ffffff; }
+    .card h3 {
+      color: #ffffff;
+    }
 
     footer {
       text-align: center;
@@ -67,10 +84,26 @@
       background: #17243a;
       color: #b9c5d6;
     }
+
+    @media (max-width: 600px) {
+      header {
+        padding: 40px 15px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      nav a {
+        display: inline-block;
+        margin: 5px 10px;
+      }
+    }
   </style>
 </head>
 
 <body>
+
   <header>
     <h1>Christopher Mooers</h1>
     <p>Computer Science | Software Engineering</p>
@@ -85,80 +118,131 @@
   </nav>
 
   <main>
+
     <section id="about">
       <h2>About Me</h2>
+
       <p>
         Welcome to my software engineering portfolio.
         I am a Computer Science student at Southern New
         Hampshire University, concentrating in Software
         Engineering. My interests include object-oriented
-        programming, algorithms, full-stack development,
-        and secure software design.
+        programming, algorithms, database management,
+        and secure software development.
+      </p>
+
+      <p>
+        Through my coursework, I have gained experience
+        with programming languages including Java,
+        C++, and Python, along with software design,
+        testing, and database technologies.
       </p>
     </section>
 
     <section id="projects">
       <h2>Featured Projects</h2>
+
       <div class="projects">
+
         <div class="card">
-          <h3>Draw It or Lose It</h3>
-          <p>Java | Software Design and Engineering</p>
+          <h3>SQL Injection Prevention</h3>
+          <p>C++ | SQLite | CS 405</p>
+
           <p>
-            An object-oriented game management application
-            selected for architectural and functional
-            enhancements.
+            A secure coding application selected for
+            software engineering and design enhancements.
+            Planned improvements include object-oriented
+            architecture, SQLite prepared statements,
+            improved error handling, and automated testing.
           </p>
         </div>
 
         <div class="card">
-          <h3>Corner Grocer</h3>
-          <p>C++ | Algorithms and Data Structures</p>
+          <h3>Customer Management Application</h3>
+          <p>C++ | CS 410</p>
+
           <p>
-            A grocery frequency analysis application
-            selected for algorithmic and data structure
-            improvements.
+            A customer management application selected
+            for algorithms and data structures enhancements.
+            Planned improvements include efficient customer
+            lookup, searching, sorting, and improved
+            data organization.
           </p>
         </div>
 
         <div class="card">
-          <h3>Travlr</h3>
-          <p>Angular | Node.js | MongoDB</p>
+          <h3>Animal Shelter Dashboard</h3>
+          <p>Python | MongoDB | CS 340</p>
+
           <p>
-            A full-stack travel application selected
-            for database and data management enhancements.
+            A database-driven animal shelter application
+            selected for database enhancements.
+            Planned improvements include database indexing,
+            query optimization, input validation,
+            and secure database interactions.
           </p>
         </div>
+
       </div>
     </section>
 
     <section id="portfolio">
       <h2>CS 499 Capstone ePortfolio</h2>
+
       <p>
-        This portfolio will document the enhancement of
-        three previously developed applications. It will
-        include original and enhanced source code,
-        a code review, technical narratives, and a
-        professional self-assessment.
+        This ePortfolio documents my growth throughout
+        the Computer Science program at Southern New
+        Hampshire University. It will showcase three
+        enhanced software artifacts representing software
+        engineering and design, algorithms and data
+        structures, and databases.
       </p>
+
       <p>
-        Capstone enhancements are currently in the
-        planning stage.
+        Each enhancement will demonstrate my ability
+        to evaluate existing software, identify areas
+        for improvement, and implement solutions that
+        emphasize functionality, performance,
+        maintainability, and security.
+      </p>
+
+      <p>
+        As the capstone progresses, this website will
+        include original and enhanced source code,
+        a code review, technical narratives,
+        and a professional self-assessment.
+      </p>
+
+      <p>
+        <strong>Current Status:</strong>
+        Capstone enhancement planning in progress.
       </p>
     </section>
 
     <section id="contact">
       <h2>Connect</h2>
+
       <p>
-        GitHub:
-        <a href="https://github.com/ChristopherMooers">
+        View my programming projects and coursework
+        on GitHub:
+      </p>
+
+      <p>
+        <a href="https://github.com/ChristopherMooers"
+           target="_blank"
+           rel="noopener noreferrer">
           github.com/ChristopherMooers
         </a>
       </p>
     </section>
+
   </main>
 
   <footer>
-    <p>Christopher Mooers | Software Engineering Portfolio</p>
+    <p>
+      Christopher Mooers | Software Engineering Portfolio
+    </p>
   </footer>
+
 </body>
 </html>
